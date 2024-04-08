@@ -1,0 +1,30 @@
+{
+  "name": "Handwritten Digit Recognition",
+  "version": "1.0.0",
+  "description": "A web-based application for real-time handwritten digit recognition, leveraging a neural network model trained with PyTorch and implemented in JavaScript for the browser.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vontanne/handwritten-digit-recognition"
+  },
+  "keywords": [
+    "neural-network",
+    "javascript",
+    "machine-learning",
+    "deep-learning",
+    "ai",
+    "data-science",
+    "nodejs",
+    "education"
+  ],
+  "author": "Hovhannes Hovhannisyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vontanne/handwritten-digit-recognition/issues"
+  },
+  "homepage": "https://github.com/vontanne/handwritten-digit-recognition#readme"
+}
