@@ -1,0 +1,167 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Handwritten Digit Recognition - A simple tool for recognizing handwritten digits."
+    />
+    <meta
+      name="keywords"
+      content="digit recognizer, handwritten digits, machine learning, neural network, JavaScript, PyTorch"
+    />
+    <meta name="author" content="Hovhannes Hovhannisyan" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Handwritten Digit Recognition" />
+    <meta
+      property="og:description"
+      content="A simple tool for recognizing handwritten digits."
+    />
+    <meta
+      property="og:url"
+      content="https://github.com/vontanne/handwritten-digit-recognition"
+    />
+    <title>Handwritten Digit Recognition</title>
+    <link
+      rel="icon"
+      href="icons/dall-e-generated.png"
+      type="image/png"
+      alt="App Icon"
+    />
+    <link rel="stylesheet" href="./style/style.css">
+  </head>
+  <body>
+    <nav>
+      <div class="nav-footer-common">
+        <div class="brand-logo center">Simple Digit Recognizer</div>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <a
+              href="https://github.com/vontanne/handwritten-digit-recognition"
+              target="_blank"
+              >Source Code</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="card-panel hoverable">
+          <blockquote>
+            <p style="font-size: larger">
+              <strong
+                >Quickly recognize digits with our neural network, built with
+                JavaScript for speedy predictions. This web demo uses a model
+                trained with PyTorch to identify numbers right away.
+              </strong>
+            </p>
+          </blockquote>
+        </div>
+        <div class="col s3 offset-s4">
+          <div class="card-panel no-pad hoverable">
+            <canvas
+              class="canvas elevation"
+              id="canvas"
+              width="280"
+              height="280"
+            ></canvas>
+          </div>
+        </div>
+        <div class="card-panel hoverable col s2">
+          <div id="pred" class="predictions">
+            <div class="prediction-col" id="prediction-0">
+              <div class="prediction-bar-container">
+                <div class="prediction-bar"></div>
+              </div>
+              <div class="prediction-number rotated">0</div>
+            </div>
+
+            <div class="prediction-col" id="prediction-1">
+              <div class="prediction-bar-container">
+                <div class="prediction-bar"></div>
+              </div>
+              <div class="prediction-number rotated">1</div>
+            </div>
+
+            <div class="prediction-col" id="prediction-2">
+              <div class="prediction-bar-container">
+                <div class="prediction-bar"></div>
+              </div>
+              <div class="prediction-number rotated">2</div>
+            </div>
+
+            <div class="prediction-col" id="prediction-3">
+              <div class="prediction-bar-container">
+                <div class="prediction-bar"></div>
+              </div>
+              <div class="prediction-number rotated">3</div>
+            </div>
+
+            <div class="prediction-col" id="prediction-4">
+              <div class="prediction-bar-container">
+                <div class="prediction-bar"></div>
+              </div>
+              <div class="prediction-number rotated">4</div>
+            </div>
+
+            <div class="prediction-col" id="prediction-5">
+              <div class="prediction-bar-container">
+                <div class="prediction-bar"></div>
+              </div>
+              <div class="prediction-number rotated">5</div>
+            </div>
+
+            <div class="prediction-col" id="prediction-6">
+              <div class="prediction-bar-container">
+                <div class="prediction-bar"></div>
+              </div>
+              <div class="prediction-number rotated">6</div>
+            </div>
+
+            <div class="prediction-col" id="prediction-7">
+              <div class="prediction-bar-container">
+                <div class="prediction-bar"></div>
+              </div>
+              <div class="prediction-number rotated">7</div>
+            </div>
+
+            <div class="prediction-col" id="prediction-8">
+              <div class="prediction-bar-container">
+                <div class="prediction-bar"></div>
+              </div>
+              <div class="prediction-number rotated">8</div>
+            </div>
+
+            <div class="prediction-col" id="prediction-9">
+              <div class="prediction-bar-container">
+                <div class="prediction-bar"></div>
+              </div>
+              <div class="prediction-number rotated">9</div>
+            </div>
+          </div>
+          <div class="button-pad center">
+            <a id="clear-button" class="waves-effect waves-light btn">CLEAR</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer nav-footer-common">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text"><a href="https://github.com/vontanne" target="_blank">Hovhannes Hovhannisyan 2024</a></h5>
+      </div>
+    </div>
+  </footer>
+  <script src="./mnist-model-parameters/weights/weightsLayer1.js"></script>
+  <script src="./mnist-model-parameters/weights/weightsLayer2.js"></script>
+  <script src="./mnist-model-parameters/weights/weightsLayer3.js"></script>
+  <script src="./mnist-model-parameters/biases/biasesLayer1.js"></script>
+  <script src="./mnist-model-parameters/biases/biasesLayer2.js"></script>
+  <script src="./mnist-model-parameters/biases/biasesLayer3.js"></script>
+  <script src="./script/index.js"></script>
+  </body>
+</html>
